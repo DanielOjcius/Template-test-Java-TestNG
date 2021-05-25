@@ -1,0 +1,10 @@
+image: dojcius/maven_browserdrivers:lastest
+
+test:
+  tags:
+    - java      
+  script:
+  - "mvn clean compile install"
+  - "mvn exec:java -Dbrowser='chrome' -Dnon-interactive=true"
+  - "mvn exec:java -Dbrowser='firefox' -Dnon-interactive=true"
+  - "mvn exec:java -Dbrowser='chrome, firefox' -Dnon-interactive=true"

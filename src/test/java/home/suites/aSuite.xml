@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Example Template">
+
+    <test name="Succesful get Home Page">
+        <parameter name="browser" value="Chrome" />
+        <classes>
+            <class name="home_page.tests.HomePageTest"/>
+        </classes>
+    </test>
+
+    <test name="Succesful get Customers Page">
+        <parameter name="browser" value="Chrome" />
+        <classes>
+            <class name="home_page.tests.CustomersPageTest"/>
+        </classes>
+    </test>
+</suite>
